@@ -1,5 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox")
 require("dotenv").config()
+require("hardhat-abi-exporter")
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -39,5 +40,8 @@ module.exports = {
   // 测试框架设置
   mocha: {
     timeout: 20000, // 运行单元测试的最大等待时间
+  },
+  abiExporter: {
+    path: "./react-matemask/src/abi",
   },
 }
