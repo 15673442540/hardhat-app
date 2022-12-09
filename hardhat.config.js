@@ -12,7 +12,7 @@ module.exports = {
       gasPrice: 1000000000,
     },
     // 你可以在这里配置任意网络
-    // goerli 测试网络
+    //goerli 测试网络
     goerli: {
       url: "https://goerli.infura.io/v3/" + process.env.INFURA_ID, //<---- YOUR INFURA ID! (or it won't work)
       accounts: [process.env.PRIVATE_KEY],
